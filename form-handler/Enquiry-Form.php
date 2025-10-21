@@ -41,12 +41,12 @@ $mail = new PHPMailer(true);
 try {
     // SMTP setup
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'sabariks092@gmail.com';  // 🔹 Your Gmail
-    $mail->Password   = 'tobxbtbranqthqmw';         // 🔹 App Password (NOT Gmail password)
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+$mail->Host       = 'smtp.gmail.com';
+$mail->SMTPAuth   = true;
+$mail->Username   = 'sabariks092@gmail.com';
+$mail->Password   = 'clbvonwwuqpobkku';
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SSL
+$mail->Port       = 465; // SSL port
 
     // Sender & recipient
     $mail->setFrom('sabariks092@gmail.com', 'Portfolio Contact');

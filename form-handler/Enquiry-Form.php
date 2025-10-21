@@ -46,7 +46,7 @@ $mail->SMTPAuth   = true;
 $mail->Username   = 'sabariks092@gmail.com';
 $mail->Password   = 'clbvonwwuqpobkku';
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Use SSL
-$mail->Port       = 465; // SSL port
+$mail->Port       = 587; // SSL port
 
     // Sender & recipient
     $mail->setFrom('sabariks092@gmail.com', 'Portfolio Contact');
